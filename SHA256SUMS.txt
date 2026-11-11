@@ -1,0 +1,2 @@
+939d65a820986431b296fbe8bbf69c29ccd4259279d79d449ac49c82a1a8a664  releases/retrogrzmot-intro-theme-v1.0.0-pl.zip
+5d373f5f56f2f52710a346a6de952b1912fbb47f092b93712135a18e3dd1475e  releases/retrogrzmot-intro-theme-v1.0.0-en.zip

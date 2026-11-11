@@ -1,0 +1,30 @@
+name: Validate distributions
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        package: [PL, EN]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Isolated installer tests
+        env:
+          RETROGRZMOT_TEST_PACKAGE: ${{ github.workspace }}/${{ matrix.package }}
+        run: python3 "${{ matrix.package }}/tests/test_installer.py"
+      - name: Shell syntax
+        env:
+          PACKAGE_DIRECTORY: ${{ matrix.package }}
+        run: |
+          python3 - <<'PY'
+          import os, subprocess
+          from pathlib import Path
+          for path in Path(os.environ['PACKAGE_DIRECTORY']).rglob('*'):
+              if path.is_file() and (path.suffix == '.sh' or path.name in ('retrogrzmot_led','retrogrzmot-oled','retrogrzmot_exit')):
+                  subprocess.run(['bash','-n',str(path)],check=True)
+          PY

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+ <formatVersion>7</formatVersion>
+ <view name="splash">
+  <splash name="splash"><backgroundColor>000000FF</backgroundColor></splash>
+  <image name="background">
+   <path>/userdata/system/retrogrzmot-theme/assets/logo.png</path>
+   <pos>0.5 0.46</pos><origin>0.5 0.5</origin><maxSize>0.82 0.45</maxSize>
+   <linearSmooth>true</linearSmooth>
+  </image>
+  <image name="progressbar">
+   <pos>0.25 0.87</pos><origin>0 0</origin><size>0.5 0.025</size>
+   <color>303040FF</color><colorEnd>303040FF</colorEnd>
+  </image>
+  <image name="progressbar:active"><color>00D9FFFF</color><colorEnd>FF35CFFF</colorEnd></image>
+  <text name="label"><color>FFFFFFFF</color><pos>0 0.79</pos><size>1 0.06</size><alignment>center</alignment></text>
+ </view>
+</theme>

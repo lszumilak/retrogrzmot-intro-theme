@@ -1,0 +1,275 @@
+<?xml version='1.0' encoding='utf-8'?>
+<theme>
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="background" extra="static">
+      <path>:/white.png</path>
+      <visible>true</visible>
+      <color>000000FF</color>
+      <pos>0 0</pos>
+      <origin>0 0</origin>
+      <size>1 1</size>
+      <scale>1</scale>
+      <zIndex>10</zIndex>
+    </image>
+    <image name="backgroundMachines">
+      <visible>false</visible>
+    </image>
+    <image name="backgroundFade">
+      <visible>false</visible>
+    </image>
+    <image name="CenterFade">
+      <visible>false</visible>
+    </image>
+    <image name="ControllerOverlay" extra="true">
+      <path>./art/consoles/default.png</path>
+      <path>./art/consoles/${system.theme}.png</path>
+      <path region="us">./art/consoles/us/${system.theme}.png</path>
+      <path region="jp">./art/consoles/jp/${system.theme}.png</path>
+      <path region="br">./art/consoles/br/${system.theme}.png</path>
+      <visible>true</visible>
+      <color>FFFFFFFF</color>
+      <pos>0.5 0.23</pos>
+      <origin>0.5 0.5</origin>
+      <maxSize>0.36 0.32</maxSize>
+      <linearSmooth>true</linearSmooth>
+      <zIndex>21</zIndex>
+    </image>
+    <image name="retrogrzmotBrand" extra="static">
+      <path>/userdata/system/retrogrzmot-theme/assets/logo.png</path>
+      <pos>0.97 0.045</pos>
+      <origin>1 0</origin>
+      <maxSize>0.20 0.09</maxSize>
+      <linearSmooth>true</linearSmooth>
+      <zIndex>150</zIndex>
+    </image>
+    <image name="carousel-topline">
+      <color>C000D8FF</color>
+    </image>
+    <image name="carousel-bottomline">
+      <color>C000D8FF</color>
+    </image>
+    <image name="BottomBar">
+      <color>C000D8FF</color>
+    </image>
+    <text name="manufacturerName">
+      <visible>false</visible>
+    </text>
+    <text name="fullName">
+      <visible>false</visible>
+    </text>
+    <text name="releaseYyear">
+      <visible>false</visible>
+    </text>
+    <image name="retrogrzmotLightning0" extra="true">
+      <path>/userdata/system/retrogrzmot-theme/assets/bolt-0.svg</path>
+      <pos>0.785 0.075</pos>
+      <origin>0.5 0.5</origin>
+      <maxSize>0.029 0.046</maxSize>
+      <linearSmooth>true</linearSmooth>
+      <opacity>0</opacity>
+      <zIndex>151</zIndex>
+      <storyboard repeat="forever">
+        <animation property="opacity" begin="0" duration="44546" from="0" to="0" mode="linear" />
+        <animation property="opacity" begin="44546" duration="20" from="0" to="0.85" mode="linear" />
+        <animation property="opacity" begin="44566" duration="95" from="0.85" to="0" mode="linear" />
+        <animation property="opacity" begin="44661" duration="28327" from="0" to="0" mode="linear" />
+        <animation property="opacity" begin="72988" duration="20" from="0" to="0.85" mode="linear" />
+        <animation property="opacity" begin="73008" duration="95" from="0.85" to="0" mode="linear" />
+        <animation property="opacity" begin="73103" duration="65" from="0" to="0" mode="linear" />
+        <animation property="opacity" begin="73168" duration="20" from="0" to="0.65" mode="linear" />
+        <animation property="opacity" begin="73188" duration="85" from="0.65" to="0" mode="linear" />
+        <animation property="opacity" begin="73273" duration="4737" from="0" to="0" mode="linear" />
+        <animation property="opacity" begin="78010" duration="20" from="0" to="0.85" mode="linear" />
+        <animation property="opacity" begin="78030" duration="95" from="0.85" to="0" mode="linear" />
+        <animation property="opacity" begin="78125" duration="65" from="0" to="0" mode="linear" />
+        <animation property="opacity" begin="78190" duration="20" from="0" to="0.65" mode="linear" />
+        <animation property="opacity" begin="78210" duration="85" from="0.65" to="0" mode="linear" />
+        <animation property="opacity" begin="78295" duration="9235" from="0" to="0" mode="linear" />
+        <animation property="opacity" begin="87530" duration="20" from="0" to="0.85" mode="linear" />
+        <animation property="opacity" begin="87550" duration="95" from="0.85" to="0" mode="linear" />
+        <animation property="opacity" begin="87645" duration="65" from="0" to="0" mode="linear" />
+        <animation property="opacity" begin="87710" duration="20" from="0" to="0.65" mode="linear" />
+        <animation property="opacity" begin="87730" duration="85" from="0.65" to="0" mode="linear" />
+        <animation property="opacity" begin="87815" duration="2185" from="0" to="0" mode="linear" />
+      </storyboard>
+    </image>
+    <image name="retrogrzmotLightning1" extra="true">
+      <path>/userdata/system/retrogrzmot-theme/assets/bolt-1.svg</path>
+      <pos>0.825 0.055</pos>
+      <origin>0.5 0.5</origin>
+      <maxSize>0.029 0.046</maxSize>
+      <linearSmooth>true</linearSmooth>
+      <opacity>0</opacity>
+      <zIndex>151</zIndex>
+      <storyboard repeat="forever">
+        <animation property="opacity" begin="0" duration="23165" from="0" to="0" mode="linear" />
+        <animation property="opacity" begin="23165" duration="20" from="0" to="0.85" mode="linear" />
+        <animation property="opacity" begin="23185" duration="95" from="0.85" to="0" mode="linear" />
+        <animation property="opacity" begin="23280" duration="65" from="0" to="0" mode="linear" />
+        <animation property="opacity" begin="23345" duration="20" from="0" to="0.65" mode="linear" />
+        <animation property="opacity" begin="23365" duration="85" from="0.65" to="0" mode="linear" />
+        <animation property="opacity" begin="23450" duration="34024" from="0" to="0" mode="linear" />
+        <animation property="opacity" begin="57474" duration="20" from="0" to="0.85" mode="linear" />
+        <animation property="opacity" begin="57494" duration="95" from="0.85" to="0" mode="linear" />
+        <animation property="opacity" begin="57589" duration="65" from="0" to="0" mode="linear" />
+        <animation property="opacity" begin="57654" duration="20" from="0" to="0.65" mode="linear" />
+        <animation property="opacity" begin="57674" duration="85" from="0.65" to="0" mode="linear" />
+        <animation property="opacity" begin="57759" duration="6067" from="0" to="0" mode="linear" />
+        <animation property="opacity" begin="63826" duration="20" from="0" to="0.85" mode="linear" />
+        <animation property="opacity" begin="63846" duration="95" from="0.85" to="0" mode="linear" />
+        <animation property="opacity" begin="63941" duration="26059" from="0" to="0" mode="linear" />
+      </storyboard>
+    </image>
+    <image name="retrogrzmotLightning2" extra="true">
+      <path>/userdata/system/retrogrzmot-theme/assets/bolt-2.svg</path>
+      <pos>0.87 0.057</pos>
+      <origin>0.5 0.5</origin>
+      <maxSize>0.029 0.046</maxSize>
+      <linearSmooth>true</linearSmooth>
+      <opacity>0</opacity>
+      <zIndex>151</zIndex>
+      <storyboard repeat="forever">
+        <animation property="opacity" begin="0" duration="4709" from="0" to="0" mode="linear" />
+        <animation property="opacity" begin="4709" duration="20" from="0" to="0.85" mode="linear" />
+        <animation property="opacity" begin="4729" duration="95" from="0.85" to="0" mode="linear" />
+        <animation property="opacity" begin="4824" duration="65" from="0" to="0" mode="linear" />
+        <animation property="opacity" begin="4889" duration="20" from="0" to="0.65" mode="linear" />
+        <animation property="opacity" begin="4909" duration="85" from="0.65" to="0" mode="linear" />
+        <animation property="opacity" begin="4994" duration="43551" from="0" to="0" mode="linear" />
+        <animation property="opacity" begin="48545" duration="20" from="0" to="0.85" mode="linear" />
+        <animation property="opacity" begin="48565" duration="95" from="0.85" to="0" mode="linear" />
+        <animation property="opacity" begin="48660" duration="31964" from="0" to="0" mode="linear" />
+        <animation property="opacity" begin="80624" duration="20" from="0" to="0.85" mode="linear" />
+        <animation property="opacity" begin="80644" duration="95" from="0.85" to="0" mode="linear" />
+        <animation property="opacity" begin="80739" duration="9261" from="0" to="0" mode="linear" />
+      </storyboard>
+    </image>
+    <image name="retrogrzmotLightning3" extra="true">
+      <path>/userdata/system/retrogrzmot-theme/assets/bolt-3.svg</path>
+      <pos>0.92 0.057</pos>
+      <origin>0.5 0.5</origin>
+      <maxSize>0.029 0.046</maxSize>
+      <linearSmooth>true</linearSmooth>
+      <opacity>0</opacity>
+      <zIndex>151</zIndex>
+      <storyboard repeat="forever">
+        <animation property="opacity" begin="0" duration="8871" from="0" to="0" mode="linear" />
+        <animation property="opacity" begin="8871" duration="20" from="0" to="0.85" mode="linear" />
+        <animation property="opacity" begin="8891" duration="95" from="0.85" to="0" mode="linear" />
+        <animation property="opacity" begin="8986" duration="10666" from="0" to="0" mode="linear" />
+        <animation property="opacity" begin="19652" duration="20" from="0" to="0.85" mode="linear" />
+        <animation property="opacity" begin="19672" duration="95" from="0.85" to="0" mode="linear" />
+        <animation property="opacity" begin="19767" duration="65" from="0" to="0" mode="linear" />
+        <animation property="opacity" begin="19832" duration="20" from="0" to="0.65" mode="linear" />
+        <animation property="opacity" begin="19852" duration="85" from="0.65" to="0" mode="linear" />
+        <animation property="opacity" begin="19937" duration="10919" from="0" to="0" mode="linear" />
+        <animation property="opacity" begin="30856" duration="20" from="0" to="0.85" mode="linear" />
+        <animation property="opacity" begin="30876" duration="95" from="0.85" to="0" mode="linear" />
+        <animation property="opacity" begin="30971" duration="65" from="0" to="0" mode="linear" />
+        <animation property="opacity" begin="31036" duration="20" from="0" to="0.65" mode="linear" />
+        <animation property="opacity" begin="31056" duration="85" from="0.65" to="0" mode="linear" />
+        <animation property="opacity" begin="31141" duration="4486" from="0" to="0" mode="linear" />
+        <animation property="opacity" begin="35627" duration="20" from="0" to="0.85" mode="linear" />
+        <animation property="opacity" begin="35647" duration="95" from="0.85" to="0" mode="linear" />
+        <animation property="opacity" begin="35742" duration="54258" from="0" to="0" mode="linear" />
+      </storyboard>
+    </image>
+    <image name="retrogrzmotLightning4" extra="true">
+      <path>/userdata/system/retrogrzmot-theme/assets/bolt-4.svg</path>
+      <pos>0.965 0.085</pos>
+      <origin>0.5 0.5</origin>
+      <maxSize>0.029 0.046</maxSize>
+      <linearSmooth>true</linearSmooth>
+      <opacity>0</opacity>
+      <zIndex>151</zIndex>
+      <storyboard repeat="forever">
+        <animation property="opacity" begin="0" duration="1300" from="0" to="0" mode="linear" />
+        <animation property="opacity" begin="1300" duration="20" from="0" to="0.85" mode="linear" />
+        <animation property="opacity" begin="1320" duration="95" from="0.85" to="0" mode="linear" />
+        <animation property="opacity" begin="1415" duration="31644" from="0" to="0" mode="linear" />
+        <animation property="opacity" begin="33059" duration="20" from="0" to="0.85" mode="linear" />
+        <animation property="opacity" begin="33079" duration="95" from="0.85" to="0" mode="linear" />
+        <animation property="opacity" begin="33174" duration="65" from="0" to="0" mode="linear" />
+        <animation property="opacity" begin="33239" duration="20" from="0" to="0.65" mode="linear" />
+        <animation property="opacity" begin="33259" duration="85" from="0.65" to="0" mode="linear" />
+        <animation property="opacity" begin="33344" duration="35128" from="0" to="0" mode="linear" />
+        <animation property="opacity" begin="68472" duration="20" from="0" to="0.85" mode="linear" />
+        <animation property="opacity" begin="68492" duration="95" from="0.85" to="0" mode="linear" />
+        <animation property="opacity" begin="68587" duration="65" from="0" to="0" mode="linear" />
+        <animation property="opacity" begin="68652" duration="20" from="0" to="0.65" mode="linear" />
+        <animation property="opacity" begin="68672" duration="85" from="0.65" to="0" mode="linear" />
+        <animation property="opacity" begin="68757" duration="21243" from="0" to="0" mode="linear" />
+      </storyboard>
+    </image>
+    <image name="retrogrzmotLightning5" extra="true">
+      <path>/userdata/system/retrogrzmot-theme/assets/bolt-5.svg</path>
+      <pos>0.93 0.125</pos>
+      <origin>0.5 0.5</origin>
+      <maxSize>0.029 0.046</maxSize>
+      <linearSmooth>true</linearSmooth>
+      <opacity>0</opacity>
+      <zIndex>151</zIndex>
+      <storyboard repeat="forever">
+        <animation property="opacity" begin="0" duration="17090" from="0" to="0" mode="linear" />
+        <animation property="opacity" begin="17090" duration="20" from="0" to="0.85" mode="linear" />
+        <animation property="opacity" begin="17110" duration="95" from="0.85" to="0" mode="linear" />
+        <animation property="opacity" begin="17205" duration="10394" from="0" to="0" mode="linear" />
+        <animation property="opacity" begin="27599" duration="20" from="0" to="0.85" mode="linear" />
+        <animation property="opacity" begin="27619" duration="95" from="0.85" to="0" mode="linear" />
+        <animation property="opacity" begin="27714" duration="65" from="0" to="0" mode="linear" />
+        <animation property="opacity" begin="27779" duration="20" from="0" to="0.65" mode="linear" />
+        <animation property="opacity" begin="27799" duration="85" from="0.65" to="0" mode="linear" />
+        <animation property="opacity" begin="27884" duration="12427" from="0" to="0" mode="linear" />
+        <animation property="opacity" begin="40311" duration="20" from="0" to="0.85" mode="linear" />
+        <animation property="opacity" begin="40331" duration="95" from="0.85" to="0" mode="linear" />
+        <animation property="opacity" begin="40426" duration="42610" from="0" to="0" mode="linear" />
+        <animation property="opacity" begin="83036" duration="20" from="0" to="0.85" mode="linear" />
+        <animation property="opacity" begin="83056" duration="95" from="0.85" to="0" mode="linear" />
+        <animation property="opacity" begin="83151" duration="65" from="0" to="0" mode="linear" />
+        <animation property="opacity" begin="83216" duration="20" from="0" to="0.65" mode="linear" />
+        <animation property="opacity" begin="83236" duration="85" from="0.65" to="0" mode="linear" />
+        <animation property="opacity" begin="83321" duration="6679" from="0" to="0" mode="linear" />
+      </storyboard>
+    </image>
+    <image name="retrogrzmotLightning6" extra="true">
+      <path>/userdata/system/retrogrzmot-theme/assets/bolt-6.svg</path>
+      <pos>0.875 0.125</pos>
+      <origin>0.5 0.5</origin>
+      <maxSize>0.029 0.046</maxSize>
+      <linearSmooth>true</linearSmooth>
+      <opacity>0</opacity>
+      <zIndex>151</zIndex>
+      <storyboard repeat="forever">
+        <animation property="opacity" begin="0" duration="13219" from="0" to="0" mode="linear" />
+        <animation property="opacity" begin="13219" duration="20" from="0" to="0.85" mode="linear" />
+        <animation property="opacity" begin="13239" duration="95" from="0.85" to="0" mode="linear" />
+        <animation property="opacity" begin="13334" duration="39910" from="0" to="0" mode="linear" />
+        <animation property="opacity" begin="53244" duration="20" from="0" to="0.85" mode="linear" />
+        <animation property="opacity" begin="53264" duration="95" from="0.85" to="0" mode="linear" />
+        <animation property="opacity" begin="53359" duration="7711" from="0" to="0" mode="linear" />
+        <animation property="opacity" begin="61070" duration="20" from="0" to="0.85" mode="linear" />
+        <animation property="opacity" begin="61090" duration="95" from="0.85" to="0" mode="linear" />
+        <animation property="opacity" begin="61185" duration="65" from="0" to="0" mode="linear" />
+        <animation property="opacity" begin="61250" duration="20" from="0" to="0.65" mode="linear" />
+        <animation property="opacity" begin="61270" duration="85" from="0.65" to="0" mode="linear" />
+        <animation property="opacity" begin="61355" duration="28645" from="0" to="0" mode="linear" />
+      </storyboard>
+    </image>
+    <image name="retrogrzmotLightning7" extra="true">
+      <path>/userdata/system/retrogrzmot-theme/assets/bolt-7.svg</path>
+      <pos>0.815 0.125</pos>
+      <origin>0.5 0.5</origin>
+      <maxSize>0.029 0.046</maxSize>
+      <linearSmooth>true</linearSmooth>
+      <opacity>0</opacity>
+      <zIndex>151</zIndex>
+      <storyboard repeat="forever">
+        <animation property="opacity" begin="0" duration="75282" from="0" to="0" mode="linear" />
+        <animation property="opacity" begin="75282" duration="20" from="0" to="0.85" mode="linear" />
+        <animation property="opacity" begin="75302" duration="95" from="0.85" to="0" mode="linear" />
+        <animation property="opacity" begin="75397" duration="14603" from="0" to="0" mode="linear" />
+      </storyboard>
+    </image>
+  </view>
+</theme>

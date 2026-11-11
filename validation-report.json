@@ -1,0 +1,95 @@
+{
+  "release": "1.0.0",
+  "date": "2026-11-11",
+  "target": "Raspberry Pi 3 Model B+ / Batocera 43.1",
+  "result": "PASS",
+  "packages": [
+    {
+      "file": "retrogrzmot-intro-theme-v1.0.0-pl.zip",
+      "bytes": 8789074,
+      "sha256": "939d65a820986431b296fbe8bbf69c29ccd4259279d79d449ac49c82a1a8a664",
+      "profile": "intro-theme",
+      "language": "pl",
+      "files": 33
+    },
+    {
+      "file": "retrogrzmot-intro-theme-v1.0.0-en.zip",
+      "bytes": 8731619,
+      "sha256": "5d373f5f56f2f52710a346a6de952b1912fbb47f092b93712135a18e3dd1475e",
+      "profile": "intro-theme",
+      "language": "en",
+      "files": 33
+    },
+    {
+      "file": "retrogrzmot-complete-v1.0.0-pl.zip",
+      "bytes": 9717928,
+      "sha256": "bfed35359c23c62cb78439317e9b8fa25bcb6538d76b13f0b1fb02ae49c56292",
+      "profile": "complete",
+      "language": "pl",
+      "files": 90
+    },
+    {
+      "file": "retrogrzmot-complete-v1.0.0-en.zip",
+      "bytes": 9660468,
+      "sha256": "bf0d1f4f1eae86b3d9c90c4c5d35302725a4a5f64ff6211614b1d8ece5b69fb4",
+      "profile": "complete",
+      "language": "en",
+      "files": 90
+    }
+  ],
+  "isolated_tests": {
+    "platform": "Raspberry Pi 3B+ Linux / Batocera 43.1",
+    "passed": 86,
+    "not_applicable": 6,
+    "cross_bundle_tests_passed": 3,
+    "module_selection_combinations_checked": 272,
+    "coverage": [
+      "PL/EN install and restore",
+      "foreign-service conflict",
+      "interface-language preservation",
+      "existing LED preferences",
+      "optional equipment",
+      "legacy/custom early boot hooks",
+      "idempotent reinstall",
+      "partial write failure rollback",
+      "overlay-save failure rollback",
+      "failed uninstall recovery",
+      "reverse-order restore",
+      "later unrelated settings retained",
+      "Intro & Theme → Complete",
+      "Complete → Intro & Theme",
+      "PL → EN video update"
+    ]
+  },
+  "bash_syntax_checks": {
+    "passed": 44,
+    "failed": 0
+  },
+  "device_preflight_checks": [
+    {
+      "profile": "intro-theme",
+      "returncode": 0,
+      "output": "Modules: early-led, skip, theme\nChanged files: 26\nCHECK OK. No files changed; no lights, services or reboot triggered.\n"
+    },
+    {
+      "profile": "complete",
+      "returncode": 0,
+      "output": "Modules: early-led, exit, led, oled, shim, skip, theme\nChanged files: 39\nCHECK OK. No files changed; no lights, services or reboot triggered.\n"
+    }
+  ],
+  "active_console_configuration_unchanged": true,
+  "archive_checks": [
+    "ZIP integrity",
+    "exact file manifest and SHA256",
+    "PL/EN video mapping",
+    "LF scripts without BOM",
+    "executable permissions",
+    "no personal movie or private connection files"
+  ],
+  "limits": [
+    "Full bundle installation was tested in isolated filesystem roots, not by reinstalling the active console.",
+    "GPIO26 skip and game exit plus early LED handover have prior owner-confirmed device tests.",
+    "USB START remains physically unverified; Bluetooth is unavailable during the tested intro boot stage.",
+    "Early amber logo appears with OLED, at most about half a second earlier; not instant on POWER."
+  ]
+}

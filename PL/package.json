@@ -1,0 +1,22 @@
+{
+  "name": "RETROGRZMOT Intro & Theme",
+  "profile": "intro-theme",
+  "version": "1.0.0",
+  "language": "pl",
+  "date": "2026-11-11",
+  "hardware": "Raspberry Pi 3 Model B+",
+  "batocera": "43.1",
+  "available_modules": [
+    "theme",
+    "skip",
+    "skip-usb",
+    "early-led"
+  ],
+  "known_legacy_boot_sha256": [
+    "409d78034ea20654192f312d7cf8976ac8ff621d23dbc7df332267415e104586",
+    "ff12330cbc5fbda9d2da106ca21878ee2c7d1764ae1f00a3fd55b6ddba681cc8"
+  ],
+  "public_video": "aircraft only; v04; 16 seconds",
+  "video_sha256": "9970d4545d85e3ea0d034c77b0540f417a3a910f04873a3b8dab639247b89ced",
+  "component_commits": {}
+}
